@@ -1,0 +1,80 @@
+# ============================================
+# Unity 工程 .gitignore
+# 基线：GitHub 官方 Unity.gitignore
+# 附加：本项目的抖音小游戏构建产物 / 工作笔记
+# ============================================
+
+# ---------- Unity 自动生成的目录（体积巨大，务必忽略）----------
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# 本项目实际存在的小写 log 目录
+/log/
+
+# ---------- 本项目特定：抖音小游戏构建产物 ----------
+# tt-minigame/ 与 Build/ 都是可重新构建的产物，不进版本库
+/tt-minigame/
+
+# ---------- 资源 meta 不应被忽略 ----------
+!/[Aa]ssets/**/*.meta
+
+# ---------- IDE / 工程文件（Unity 会自动重新生成）----------
+.vs/
+.gradle/
+.consulo/
+ExportedObj/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# JetBrains Rider 自动生成的插件
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# ---------- 崩溃报告 ----------
+sysinfo.txt
+crashlytics-build.properties
+
+# ---------- 打包产物 ----------
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.zip
+*.rar
+*.7z
+
+# ---------- Packed Addressables ----------
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# ---------- 临时自动生成的 Android 资源 ----------
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# ---------- 本机工作笔记，不作为代码库内容 ----------
+/.workbuddy/
+
+# ---------- 操作系统杂项 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
