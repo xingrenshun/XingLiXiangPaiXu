@@ -36,7 +36,8 @@ namespace EKStudio
         public void UpdateText()
         {
             totalMoney.text = data.totalMoney.ToString("0");
-            levelCount.text = "Lvl." + data.levelCount.ToString("0");
+            // 关卡文本中文化：原为 "Lvl." + 数字，现改为「第N关」
+            levelCount.text = "第" + data.levelCount.ToString("0") + "关";
         }
     
     
